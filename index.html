@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonardo | Portfólio de Análise e Desenvolvimento de Sistemas</title>
+  <link rel="icon" type="image/png" href="src/assets/icons/letter-l.png">   
+  <meta name="description" content="Portfólio de Leonardo, estudante de Análise e Desenvolvimento de Sistemas no IF Baiano, Campus Guanambi.">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho e navegação -->
+  <header class="topo">
+    <a class="logo" href="#home">Leonardo</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#titulo-sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HOME -->
+    <section id="home" class="hero" aria-labelledby="titulo-home">
+      <div class="hero__texto">
+        <p>Olá, eu sou</p>
+        <h1 id="titulo-home">Leonardo</h1>
+        <p class="hero__cargo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        <p>Proeficiente em linguagem C, desenvolvo jogos e atualmente aprendo sobre ciência de dados</p>
+        <a class="botao" href="#contato">Vamos conversar</a>
+        <a class="botao botao--vazio" href="#projetos">Ver projetos</a>
+      </div>
+      <div class="hero__visual">
+        <img class="foto" src="src/assets/img/mypfp.jpeg" alt="Retrato de Leonardo" width="400" height="400">
+        <div class="line" aria-hidden="true">
+          <span style="--t:1"></span><span style="--t:2"></span><span style="--t:3"></span><span style="--t:4"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PORTFÓLIO / PROJETOS -->
+    <section id="projetos" class="secao" aria-labelledby="titulo-projetos">
+      <h2 id="titulo-projetos">Projetos</h2>
+      <div class="projetos">
+        <article class="projeto">
+          <img src="src/assets/img/sjf_scheduler.png" alt="Barras de processos ordenadas do menor para o maior" loading="lazy" width="600" height="300">
+          <h3>Simulador de escalonamento SJF</h3>
+          <p>Simulador em C do algoritmo Shortest Job First, com entrada manual ou aleatória de processos, fila e tela de simulação atualizada a cada 0,5 s.</p>
+          <p><a href="https://github.com/elderluiz-dev/ProjetoEscalonamentoSO">Ver código no GitHub</a></p>
+        </article>
+        <article class="projeto">
+          <img src="src/assets/img/EXU_GAMES.png" alt="Visão de dentro do jogo EXU GAMES." loading="lazy" width="700" height="300">
+          <h3>EXU GAMES</h3>
+          <p>Um jogo de cartas estratégico que aplica conceitos de estrutra de dados (LIFO e FIFO).</p>
+          <p><a href="https://github.com/dyonepaulo/exu-card-game">Ver código no GitHub</a></p>
+        </article>
+        <article class="projeto">
+          <img src="src/assets/img/portfolio.png" alt="Esboço de uma página web" loading="lazy" width="600" height="300">
+          <h3>Este portfólio</h3>
+          <p>Site em HTML5 semântico e CSS avançado, sem JavaScript.</p>
+          <p><a href="https://github.com/HachimiMambow/portfolio_trabalho">Ver código no GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+  <!-- SOBRE MIM -->
+  <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+    <h2 id="titulo-sobre">Sobre mim</h2>
+    <div class="sobre">
+      <p>Aluno do curso superior de Análise e Desenvolvimento de Sistemas, gosto de entender como algo funciona por dentro. Comecei pela linguagem C, e busco melhorar meus conhecimentos na ciência da computação</p>
+      <dl class="linha-tempo">
+        <div>
+          <dt>Formação</dt>
+          <dd>Tecnologia em ADS, IF Baiano, Campus Guanambi (em andamento)</dd>
+        </div>
+        <div>
+          <dt>Experiência</dt>
+          <dd>Projetos acadêmicos individuais e em grupo <a class="w_link" href="#projetos">(Ver projetos)</a></dd>
+        </div>
+        <div>
+          <dt>Interesses</dt>
+          <dd>Sistemas operacionais, banco de dados, acessibilidade e interfaces</dd>
+        </div>
+      </dl>
+    </div>
+    </section>
+
+     <!-- HABILIDADES -->
+    <section id="habilidades" class="secao" aria-labelledby="titulo-habilidades">
+      <h2 id="titulo-habilidades">Habilidades</h2>
+      <p>Nível atual em cada ferramenta.</p>
+      <ul class="habilidades">
+        <li><label for="h-c">Linguagem C</label><meter id="h-c" min="0" max="10" value="9">9 de 10</meter></li>
+        <li><label for="h-html">HTML e CSS</label><meter id="h-html" min="0" max="10" value="7">7 de 10</meter></li>
+        <li><label for="h-git">Git e GitHub</label><meter id="h-git" min="0" max="10" value="9">9 de 10</meter></li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Contato</h2>
+      <div class="contato">
+        <form action="https://formspree.io/f/SEU_ID" method="POST">
+          <label for="nome">Nome</label>
+          <input id="inome" name="nome" type="text" required minlength="3" autocomplete="name">
+          <span class="erro">Informe seu nome com pelo menos 3 letras.</span>
+
+          <label for="email">E-mail</label>
+          <input id="iemail" name="email" type="email" required autocomplete="email">
+          <span class="erro">Informe um e-mail válido, como nome@exemplo.com.</span>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="imensagem" name="mensagem" rows="5" required minlength="10"></textarea>
+          <span class="erro">Escreva ao menos 10 caracteres.</span>
+
+          <button class="botao" type="submit">Enviar mensagem</button>
+        </form>
+        <ul class="links">
+          <li><a href="https://github.com/HachimiMambow">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/SEU-PERFIL">LinkedIn</a></li>
+          <li><a href="https://wa.me/557781325693">WhatsApp</a></li>
+          <li><a href="mailto:leowithceab1107@gmail.com">E-mail</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>&copy Leonardo 2026</p>
+  </footer>
+</body>
+</html>
